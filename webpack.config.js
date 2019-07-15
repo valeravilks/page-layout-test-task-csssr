@@ -54,8 +54,8 @@ let conf = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[path][name].[ext]',
-                            outputPath: 'img',
+                            outputPath: 'images',
+                            name: '[name][hash].[ext]',
                         },
                     },
                 ],

@@ -1,0 +1,11 @@
+@import 'smart-grid.scss';
+
+@include reset();
+
+body{
+  background: url('../img/bg.jpg');
+}
+.wrapper{
+  @include wrapper();
+  background-color: red;
+}
