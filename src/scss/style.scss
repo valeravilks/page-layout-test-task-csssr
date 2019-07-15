@@ -3,9 +3,24 @@
 @include reset();
 
 body{
-  background: url('../img/bg.jpg');
+  background-color: #797979;
 }
 .wrapper{
   @include wrapper();
-  background-color: red;
+  background: url('../img/bg.jpg');
+}
+
+/* Header
+ */
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+}
+.header__secret{
+  position: relative;
+  left: 60px;
+}
+.header__logo{
+  align-self: flex-start;
 }
