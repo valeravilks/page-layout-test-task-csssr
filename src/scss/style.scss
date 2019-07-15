@@ -1,5 +1,5 @@
 @import 'smart-grid.scss';
-
+@import './../fonts/PTSans/stylesheet.scss';
 @include reset();
 
 body{
@@ -23,4 +23,11 @@ body{
 }
 .header__logo{
   align-self: flex-start;
+}
+
+/* Content
+ */
+
+.description{
+  padding-left: 258px;
 }

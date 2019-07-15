@@ -38,7 +38,16 @@ let conf = {
                         }
                     },
                     "css-loader", // translates CSS into CommonJS
-                    "sass-loader" // compiles Sass to CSS, using Node Sass by default
+                    {
+                        loader: "resolve-url-loader"
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                            sourceMapContents: false
+                        }
+                    }
                 ]
             },
             {
@@ -60,15 +69,39 @@ let conf = {
                     },
                 ],
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'font',
+                            name: '[name].[ext]',
+                        },
+                    },
+                ]
+            }
         ]
     },
     resolve: {
         alias: {
-            '~': path.resolve(__dirname, 'src'),
-            '~c': path.resolve(__dirname, 'src/components'),
-            '~p': path.resolve(__dirname, 'src/pages'),
-            '~s': path.resolve(__dirname, 'src/store')
-        }
+            pSrc: path.join(__dirname, 'src'),
+            '~html': path.resolve(__dirname, 'src/html'),
+            '~img': path.resolve(__dirname, 'src/img'),
+            '~scss': path.resolve(__dirname, 'src/scss')
+        },
+        extensions: [
+            ".sass",
+            ".scss",
+            ".css",
+            ".wasm",
+            ".web.js",
+            ".mjs",
+            ".js",
+            ".json",
+            ".web.jsx",
+            ".jsx"
+        ],
     },
     devServer: {
         contentBase: "./dist"
