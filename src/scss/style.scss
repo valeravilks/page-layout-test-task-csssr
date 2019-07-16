@@ -4,6 +4,7 @@
 
 body{
   background-color: #797979;
+  font-family: "PT Sans", sans-serif;
 }
 .wrapper{
   @include wrapper();
@@ -12,22 +13,39 @@ body{
 
 /* Header
  */
+
 .header{
   display: flex;
   justify-content: space-between;
   padding-top: 48px;
+
+  &__secret{
+    position: relative;
+    left: 60px;
+  }
+
+  &__logo{
+    align-self: flex-start;
+  }
 }
-.header__secret{
-  position: relative;
-  left: 60px;
-}
-.header__logo{
-  align-self: flex-start;
-}
+
 
 /* Content
  */
 
-.description{
-  padding-left: 258px;
+.content{
+  &__title{
+    padding-left: 258px;
+  }
 }
+
+.info-row{
+  display: flex;
+
+  &__name{
+    font-size: 22px;
+    font-weight: bold;
+    color: #2f1b15;
+  }
+}
+

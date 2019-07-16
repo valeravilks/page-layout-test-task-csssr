@@ -1,2 +1,84 @@
-main
-    img(class="description" src=require("./../../img/description.png"))
+main.content
+    img.content__title(src=require("./../../img/description.png"))
+    div.content__base.info-row
+        div.info-row__name Полное ФИО
+        input.info-row__value(type="text" placeholder="Иванов Иван Иванович")
+    div.content__base.info-row
+        div.info-row__name Год рождения
+        input.info-row__value(type="number" placeholder="1990")
+    div.content__base.info-row
+        div.info-row__name Место жительства
+        input.info-row__value(type="text" placeholder="г. Иваново, Россия")
+    div.content__base.info-row
+        div.info-row__name Скайп
+        input.info-row__value(type="text" placeholder="ivanov")
+    div.content__base.info-row
+        div.info-row__name Почта
+        input.info-row__value(type="text" placeholder="ivanov@gmail.com")
+    div.checkbox
+        h2.checkbox__title Расскажите о себе чекбоксами
+        p.checkbox__description Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+        div.check-block
+            label.check-block__name БЭМ/OOCSS
+                input.check-block__value(type="checkbox")
+            label.check-block__name Pug (Jade)
+                input.check-block__value(type="checkbox")
+            label.check-block__name Stylus/LESS/SASS
+                input.check-block__value(type="checkbox")
+            label.check-block__name Работаю с SVG
+                input.check-block__value(type="checkbox")
+            label.check-block__name Верстаю семантично
+                input.check-block__value(type="checkbox")
+            label.check-block__name Accessibility (A11Y)
+                input.check-block__value(type="checkbox")
+            label.check-block__name ES2015/ES2016
+                input.check-block__value(type="checkbox")
+            label.check-block__name Gulp/GRUNT
+                input.check-block__value(type="checkbox")
+            label.check-block__name Webpack
+                input.check-block__value(type="checkbox")
+            label.check-block__name Дружу с WebGL
+                input.check-block__value(type="checkbox")
+            label.check-block__name jQuery
+                input.check-block__value(type="checkbox")
+            label.check-block__name Знаю/изучаю Angular
+                input.check-block__value(type="checkbox")
+            label.check-block__name Знаю/изучаю React
+                input.check-block__value(type="checkbox")
+            label.check-block__name Знаю/изучаю Node.js
+                input.check-block__value(type="checkbox")
+            label.check-block__name Использую Git
+                input.check-block__value(type="checkbox")
+            label.check-block__name С глазомером всё ок
+                input.check-block__value(type="checkbox")
+            label.check-block__name Читаю blog.csssr.ru
+                input.check-block__value(type="checkbox")
+            label.check-block__name Я ленивый(-ая)
+                input.check-block__value(type="checkbox")
+            label.check-block__name У меня хороший английский
+                input.check-block__value(type="checkbox")
+        div.js-skill
+            h2.js-skill__title Уровень владения JavaScript
+            input.js-skill__range
+        div.about
+            h2.about__title Уровень владения JavaScript
+            div.about__description Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+            textarea.about__text
+        div.future-plans
+            h2.future-plans__title Какие у вас планы на будущее?
+            div.future-plans__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+            div.future-plans__radio.radio
+                label.radio__name Верстать
+                    input.radio__item(type="radio")
+                label.radio__name Прокачиваться в JS
+                    input.radio__item(type="radio")
+                label.radio__name Менеджерство
+                    input.radio__item(type="radio")
+                label.radio__name Другое
+                    input.radio__item(type="radio")
+                label.radio__name Введите пояснение
+                    input.radio__other(type="text")
+        div.date
+            div.date__name Дата заполнения
+            div.date__value ыа
+        
