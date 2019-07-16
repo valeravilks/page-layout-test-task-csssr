@@ -2,19 +2,26 @@ main.content
     img.content__title(src=require("./../../img/description.png"))
     div.content__base.info-row
         div.info-row__name Полное ФИО
-        input.info-row__value(type="text" placeholder="Иванов Иван Иванович")
+        div.info-row__block
+            input.info-row__value(type="text" placeholder="Иванов Иван Иванович")
     div.content__base.info-row
-        div.info-row__name Год рождения
-        input.info-row__value(type="number" placeholder="1990")
-    div.content__base.info-row
+        div.info-row__name
+            span.info-row-pp2 Год рож
+            span.info-row-pp3 дения
+        div.info-row__block.info-row__block-pp
+            input.info-row__value(type="text" placeholder="1990")
+    div.content__base.info-row.info-row-pp1
         div.info-row__name Место жительства
-        input.info-row__value(type="text" placeholder="г. Иваново, Россия")
-    div.content__base.info-row
-        div.info-row__name Скайп
-        input.info-row__value(type="text" placeholder="ivanov")
-    div.content__base.info-row
-        div.info-row__name Почта
-        input.info-row__value(type="text" placeholder="ivanov@gmail.com")
+        div.info-row__block.info-row__block-pp2
+            input.info-row__value.info-row__value-pp(type="text" placeholder="г. Иваново, Россия")
+    div.content__base.info-row.info-row-pp2
+        div.info-row__name.info-row__name-pp1 Скайп
+        div.info-row__block.info-row__block-pp3
+            input.info-row__value.info-row__value-pp1(type="text" placeholder="ivanov")
+    div.content__base.info-row.info-row-pp4
+        div.info-row__name.info-row__name-pp2 Почта
+        div.info-row__block.info-row__block-pp4
+            input.info-row__value.info-row__value-pp2(type="text" placeholder="ivanov@gmail.com")
     div.checkbox
         h2.checkbox__title Расскажите о себе чекбоксами
         p.checkbox__description Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.

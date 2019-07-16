@@ -6,6 +6,26 @@ body{
   background-color: #797979;
   font-family: "PT Sans", sans-serif;
 }
+
+input[type="text"]{
+  background: none;
+  border: none;
+  line-height: 60px;
+  width: 100%;
+  font-family: "Courier New", sans-serif;
+  font-size: 30px;
+  color: #231f20;
+  padding-left: 15px;
+}
+
+input[type="text"]::placeholder {
+  color: #231f20;
+}
+
+input[type="text"]:focus{
+  outline: none;
+}
+
 .wrapper{
   @include wrapper();
   background: url('../img/bg.jpg');
@@ -21,11 +41,12 @@ body{
 
   &__secret{
     position: relative;
-    left: 60px;
+    left: 58px;
   }
 
   &__logo{
     align-self: flex-start;
+    margin-top: 14px;
   }
 }
 
@@ -35,17 +56,111 @@ body{
 
 .content{
   &__title{
-    padding-left: 258px;
+    padding-left: 256px;
+    margin-bottom: 37px;
   }
 }
 
 .info-row{
   display: flex;
+  margin-bottom: 0;
 
   &__name{
-    font-size: 22px;
+    font-size: 22.43px;
     font-weight: bold;
     color: #2f1b15;
+    margin-right: 16px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    margin-bottom: 3px;
+
+    &-pp{
+      margin-bottom: 0;
+    }
+    &-pp1{
+      margin-bottom: 5px;
+    }
+    &-pp2{
+      margin-bottom: 2px;
+    }
+
+  }
+
+  &__value{
+    &-pp{
+      padding-left: 13px!important;
+    }
+
+    &-pp1{
+      padding-left: 12px!important;
+    }
+    &-pp2{
+      padding-left: 12px!important;
+    }
+  }
+  &-pp1{
+    margin-top: 3px;
+  }
+
+  &-pp2{
+    margin-top: 0px;
+  }
+
+  &-pp3{
+    margin-left: -1px;
+  }
+
+  &-pp4{
+    margin-top: 1px;
+  }
+
+  &__block{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+
+    &:before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 49px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      background: url("./../img/line_input.png") no-repeat;
+      background-size: 100%;
+      transform: rotate(0.18deg);
+    }
+
+    &-pp3{
+      padding-top: 5px;
+    }
+
+    &-pp{
+      &:before{
+        top: 50px;
+      }
+    }
+    &-pp2{
+      &:before{
+        top: 48px;
+
+      }
+    }
+    &-pp3{
+      &:before{
+        top: 50px;
+        transform: rotate(0deg);
+      }
+    }
+    &-pp4{
+      &:before{
+        top: 45px;
+        transform: rotate(0deg);
+      }
+    }
   }
 }
-
