@@ -424,4 +424,73 @@ input[type=range]::-moz-range-thumb {
     padding-left: 1px;
     margin-bottom: 17px;
   }
+
+  &__text{
+    margin-bottom: 39px;
+  }
+}
+
+.future-plans{
+  &__title{
+    margin-bottom: 5px;
+  }
+
+  &__description{
+    padding-left: 1.5px;
+    margin-bottom: 13px;
+  }
+  &__radio{
+  }
+}
+
+.radio{
+  &__item{
+    display: none;
+  }
+
+  &__name{
+    position: relative;
+    padding: 0 16px 0 33px;
+    font-size: 20px;
+    font-weight: bold;
+
+    &-pp1{
+      padding: 0 18.5px 0 32px;
+    }
+
+    &-pp2{
+      vertical-align: 2px;
+      top: 1px;
+    }
+  }
+
+  &__box{
+    &:before{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -2px;
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: url("./../img/radio_disabled.png");
+    }
+
+    &-pp1:before{
+      left: 0;
+    }
+
+    &-pp2:before{
+      left: -1px;
+    }
+
+    &-pp3:before{
+      left: -1px;
+      top: 14px;
+    }
+  }
+}
+
+.radio__item:checked + .radio__box:before{
+  background: url("./../img/radio_checked.png");
 }

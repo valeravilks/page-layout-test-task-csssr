@@ -104,18 +104,20 @@ main.content
             textarea.about__text(rows="3" placeholder="Ну-ууу-уу...\nЭэээ...")
         .future-plans
             h2.future-plans__title Какие у вас планы на будущее?
-            .future-plans__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+            p.future-plans__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
             .future-plans__radio.radio
                 label.radio__name Верстать
                     input.radio__item(type="radio")
-                label.radio__name Прокачиваться в JS
+                    span.radio__box
+                label.radio__name.radio__name-pp1 Прокачиваться в JS
                     input.radio__item(type="radio")
+                    span.radio__box
                 label.radio__name Менеджерство
                     input.radio__item(type="radio")
-                label.radio__name Другое
+                    span.radio__box.radio__box-pp1
+                label.radio__name.radio__name-pp2 Другое
                     input.radio__item(type="radio")
-                label.radio__name Введите пояснение
-                    input.radio__other(type="text")
+                    span.radio__box.radio__box-pp3
         .date
             .date__name Дата заполнения
             .date__value ыа
