@@ -28,6 +28,21 @@ input[type="text"]:focus{
   outline: none;
 }
 
+textarea{
+  border: none;
+  resize: none;
+  width: 100%;
+  background: url("./../img/bg_textarea.png") repeat-y top;
+  font-family: "Courier New", sans-serif;
+  font-size: 30px;
+  line-height: 58px;
+  padding: 6px 0 0 2px;
+  color: #231f20;
+}
+textarea:focus{
+  outline: none;
+}
+
 h2{
   font-size: 24px;
   font-weight: bold;
@@ -323,6 +338,7 @@ p{
     display: flex;
     font-weight: bold;
     font-size: 13px;
+    margin-bottom: 29px;
   }
 
   &__item{
@@ -387,54 +403,25 @@ input[type=range]::-moz-range-track {
   height: 8.4px;
   cursor: pointer;
   animate: 0.2s;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
+  background: none;
 }
 input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
+  height: 65px;
+  width: 30px;
+  border: none;
+  box-shadow: none;
+  background: url('./../img/arrow_range.png') no-repeat;
   cursor: pointer;
 }
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #367ebd;
+
+.about{
+  padding-left: 2px;
+  &__title{
+    margin-bottom: 10px;
+  }
+
+  &__description{
+    padding-left: 1px;
+    margin-bottom: 17px;
+  }
 }
