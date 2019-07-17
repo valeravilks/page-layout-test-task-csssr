@@ -1,80 +1,106 @@
 main.content
     img.content__title(src=require("./../../img/description.png"))
-    div.content__base.info-row
-        div.info-row__name Полное ФИО
-        div.info-row__block
+    .content__base.info-row
+        .info-row__name Полное ФИО
+        .info-row__block
             input.info-row__value(type="text" placeholder="Иванов Иван Иванович")
-    div.content__base.info-row
-        div.info-row__name
+    .content__base.info-row
+        .info-row__name
             span.info-row-pp2 Год рож
             span.info-row-pp3 дения
-        div.info-row__block.info-row__block-pp
+        .info-row__block.info-row__block-pp
             input.info-row__value(type="text" placeholder="1990")
-    div.content__base.info-row.info-row-pp1
-        div.info-row__name Место жительства
-        div.info-row__block.info-row__block-pp2
+    .content__base.info-row.info-row-pp1
+        .info-row__name Место жительства
+        .info-row__block.info-row__block-pp2
             input.info-row__value.info-row__value-pp(type="text" placeholder="г. Иваново, Россия")
-    div.content__base.info-row.info-row-pp2
-        div.info-row__name.info-row__name-pp1 Скайп
-        div.info-row__block.info-row__block-pp3
+    .content__base.info-row.info-row-pp2
+        .info-row__name.info-row__name-pp1 Скайп
+        .info-row__block.info-row__block-pp3
             input.info-row__value.info-row__value-pp1(type="text" placeholder="ivanov")
-    div.content__base.info-row.info-row-pp4
-        div.info-row__name.info-row__name-pp2 Почта
-        div.info-row__block.info-row__block-pp4
+    .content__base.info-row.info-row-pp4
+        .info-row__name.info-row__name-pp2 Почта
+        .info-row__block.info-row__block-pp4
             input.info-row__value.info-row__value-pp2(type="text" placeholder="ivanov@gmail.com")
-    div.checkbox
+    .checkbox
         h2.checkbox__title Расскажите о себе чекбоксами
         p.checkbox__description Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
-        div.check-block
-            label.check-block__name БЭМ/OOCSS
-                input.check-block__value(type="checkbox")
-            label.check-block__name Pug (Jade)
-                input.check-block__value(type="checkbox")
-            label.check-block__name Stylus/LESS/SASS
-                input.check-block__value(type="checkbox")
-            label.check-block__name Работаю с SVG
-                input.check-block__value(type="checkbox")
-            label.check-block__name Верстаю семантично
-                input.check-block__value(type="checkbox")
-            label.check-block__name Accessibility (A11Y)
-                input.check-block__value(type="checkbox")
-            label.check-block__name ES2015/ES2016
-                input.check-block__value(type="checkbox")
-            label.check-block__name Gulp/GRUNT
-                input.check-block__value(type="checkbox")
-            label.check-block__name Webpack
-                input.check-block__value(type="checkbox")
-            label.check-block__name Дружу с WebGL
-                input.check-block__value(type="checkbox")
-            label.check-block__name jQuery
-                input.check-block__value(type="checkbox")
-            label.check-block__name Знаю/изучаю Angular
-                input.check-block__value(type="checkbox")
-            label.check-block__name Знаю/изучаю React
-                input.check-block__value(type="checkbox")
-            label.check-block__name Знаю/изучаю Node.js
-                input.check-block__value(type="checkbox")
-            label.check-block__name Использую Git
-                input.check-block__value(type="checkbox")
-            label.check-block__name С глазомером всё ок
-                input.check-block__value(type="checkbox")
-            label.check-block__name Читаю blog.csssr.ru
-                input.check-block__value(type="checkbox")
-            label.check-block__name Я ленивый(-ая)
-                input.check-block__value(type="checkbox")
-            label.check-block__name У меня хороший английский
-                input.check-block__value(type="checkbox")
-        div.js-skill
+        .check-block
+            .check-block__row.check-block__row-1
+                label.check-block__name БЭМ/OOCSS
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box
+                label.check-block__name Pug (Jade)
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box
+                label.check-block__name Stylus/LESS/SASS
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box
+                label.check-block__name Работаю с SVG
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box
+                label.check-block__name Верстаю семантично
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box
+                label.check-block__name Accessibility (A11Y)
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box
+                label.check-block__name ES2015/ES2016
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp5
+            .check-block__row.check-block__row-2
+                label.check-block__name Gulp/GRUNT
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp1
+                label.check-block__name Webpack
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp1
+                label.check-block__name Дружу с&#8239&#8239WebGL
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp1
+                label.check-block__name jQuery
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp1
+                label.check-block__name Знаю/изучаю&#8201Angular
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp1
+                label.check-block__name Знаю/изучаю React
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp1
+                label.check-block__name Знаю/изучаю Node.js
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp1
+            .check-block__row.check-block__row-3
+                label.check-block__name Использую Git
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp2
+                label.check-block__name C&#8239&#8239
+                    span.check-block__eye глазомером
+                        span.check-block__eye  всё
+                            span.check-block__eye  ок
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp6
+                label.check-block__name Читаю&nbsp
+                    a.check-block__link(href="https://blog.csssr.ru") blog.csssr.ru
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp3
+                label.check-block__name Я ленивый(-ая)
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp3
+                label.check-block__name.label.check-block__name-pp2 У меня хороший английский
+                    input.check-block__value(type="checkbox")
+                    span.check-block__box.check-block__box-pp4
+        .js-skill
             h2.js-skill__title Уровень владения JavaScript
-            input.js-skill__range
-        div.about
+            input.js-skill__range(type="range")
+        .about
             h2.about__title Уровень владения JavaScript
-            div.about__description Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+            .about__description Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
             textarea.about__text
-        div.future-plans
+        .future-plans
             h2.future-plans__title Какие у вас планы на будущее?
-            div.future-plans__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
-            div.future-plans__radio.radio
+            .future-plans__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+            .future-plans__radio.radio
                 label.radio__name Верстать
                     input.radio__item(type="radio")
                 label.radio__name Прокачиваться в JS
@@ -85,7 +111,6 @@ main.content
                     input.radio__item(type="radio")
                 label.radio__name Введите пояснение
                     input.radio__other(type="text")
-        div.date
-            div.date__name Дата заполнения
-            div.date__value ыа
-        
+        .date
+            .date__name Дата заполнения
+            .date__value ыа

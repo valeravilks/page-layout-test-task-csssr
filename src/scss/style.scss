@@ -5,6 +5,8 @@
 body{
   background-color: #797979;
   font-family: "PT Sans", sans-serif;
+
+  font-kerning: normal;
 }
 
 input[type="text"]{
@@ -26,8 +28,24 @@ input[type="text"]:focus{
   outline: none;
 }
 
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  color: #2f1b15;
+}
+
+p{
+  font-size: 15px;
+  line-height: 23px;
+  font-kerning: normal;
+  color: #3d3d3d;
+}
+
 .wrapper{
-  @include wrapper();
+  max-width: 773px;
+  margin: 0 auto;
+  padding-left: 112px;
+  padding-right: 115px;
   background: url('../img/bg.jpg');
 }
 
@@ -41,7 +59,7 @@ input[type="text"]:focus{
 
   &__secret{
     position: relative;
-    left: 58px;
+    left: 61px;
   }
 
   &__logo{
@@ -82,6 +100,7 @@ input[type="text"]:focus{
     }
     &-pp2{
       margin-bottom: 2px;
+      margin-right: 15px;
     }
 
   }
@@ -95,7 +114,7 @@ input[type="text"]:focus{
       padding-left: 12px!important;
     }
     &-pp2{
-      padding-left: 12px!important;
+      padding-left: 13px!important;
     }
   }
   &-pp1{
@@ -103,7 +122,7 @@ input[type="text"]:focus{
   }
 
   &-pp2{
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   &-pp3{
@@ -162,5 +181,134 @@ input[type="text"]:focus{
         transform: rotate(0deg);
       }
     }
+  }
+}
+
+.checkbox{
+  padding-top: 59px;
+
+  &__title{
+    position: relative;
+    left: -1px;
+    margin-bottom: 6px;
+  }
+
+  &__description{
+    margin-bottom: 26px;
+  }
+}
+.check-block__value:checked + .check-block__box{
+  background: url("./../img/checkbox_check.png");
+}
+
+.check-block{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 293px;
+
+  &__value{
+    display: none;
+
+  }
+
+  &__name{
+    display: block;
+    position: relative;
+    margin-left: 28px;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 8px;
+
+    &-pp1{
+      margin-bottom: 11px;
+    }
+
+    &-pp2{
+      margin-bottom: 11px;
+      line-height: 25px;
+      margin-top: 9px;
+    }
+  }
+
+  &__box{
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    transform: translateY(-64%);
+    height: 28px;
+    width: 24px;
+    background: url("./../img/checkbox.png");
+
+    &-pp1{
+      left: -25px;
+    }
+
+    &-pp2{
+      left: -24px;
+    }
+
+    &-pp3{
+      top: 11px;
+      left: -24px;
+    }
+
+    &-pp4{
+      top: 10px;
+      left: -24px;
+    }
+
+    &-pp5{
+      top: 13px;
+    }
+
+    &-pp6{
+      left: -24px;
+      transform: translateY(-67%);
+
+    }
+  }
+
+  &__row{
+    &-1{
+      margin-right: 36px;
+    }
+    &-2{
+       margin-right: 42.5px;
+     }
+    &-3{
+      width: 272px;
+    }
+  }
+
+  &__eye{
+    vertical-align: -1px;
+  }
+
+
+  &__link{
+    color: #1f5f97;
+    position: relative;
+    text-decoration: none;
+
+    &:hover{
+      opacity: .8;
+    }
+
+    &:before{
+      content:'';
+      position: absolute;
+      height: 1px;
+      bottom: 2px;
+      width: 100%;
+      background-color: #1f5f97;
+    }
+  }
+}
+
+.js-skill{
+  &__title{
+    position: relative;
+    left: 2px;
   }
 }

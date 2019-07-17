@@ -61,10 +61,11 @@ let conf = {
                 test: /\.(png|jpe?g|gif)$/,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'url-loader',
                         options: {
                             outputPath: 'images',
                             name: '[name][hash].[ext]',
+                            limit: 8192
                         },
                     },
                 ],
