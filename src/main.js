@@ -13,4 +13,14 @@ window.onload = function(){
     });
 
 
+
+    let other = $('.future-plans__other');
+    !$('.js-other-input').prop('checked') ? other.slideUp() : other.slideDown();
+
+    $('input[name="radio"]').change(function(){
+        let other = $('.future-plans__other');
+        !$('.js-other-input').prop('checked') ? other.slideUp() : other.slideDown();
+    });
+
+
 };
