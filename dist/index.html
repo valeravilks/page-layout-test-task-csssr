@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Webpack App</title>
+  <link href="styles.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+<header class="header"><img class="header__logo" src="data:image/png;base64,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"><img class="header__secret" src="images/secret76abf38f23ad6a5a0699eed042c73049.png"></header>
+<main class="content"><img class="content__title" src="images/description4084f1cd4e857352d832e3088f22c81b.png">
+  <div class="content__base info-row">
+    <div class="info-row__name">Полное ФИО</div>
+    <div class="info-row__block">
+      <input class="info-row__value" type="text" placeholder="Иванов Иван Иванович" value="Вилькс Валерий Викторович">
+    </div>
+  </div>
+  <div class="content__base info-row">
+    <div class="info-row__name"><span class="info-row-pp2">Год рож</span><span class="info-row-pp3">дения</span></div>
+    <div class="info-row__block info-row__block-pp">
+      <input class="info-row__value" type="text" placeholder="1990" value="1991">
+    </div>
+  </div>
+  <div class="content__base info-row info-row-pp1">
+    <div class="info-row__name">Место жительства</div>
+    <div class="info-row__block info-row__block-pp2">
+      <input class="info-row__value info-row__value-pp" type="text" placeholder="г. Иваново, Россия" value="г. Великие Луки">
+    </div>
+  </div>
+  <div class="content__base info-row info-row-pp2">
+    <div class="info-row__name info-row__name-pp1">Скайп</div>
+    <div class="info-row__block info-row__block-pp3">
+      <input class="info-row__value info-row__value-pp1" type="text" placeholder="ivanov" value="valeravilks">
+    </div>
+  </div>
+  <div class="content__base info-row info-row-pp4">
+    <div class="info-row__name info-row__name-pp2">Почта</div>
+    <div class="info-row__block info-row__block-pp4">
+      <input class="info-row__value info-row__value-pp2" type="text" placeholder="ivanov@gmail.com" value="valeravilks@gmail.com">
+    </div>
+  </div>
+  <div class="checkbox">
+    <h2 class="checkbox__title">Расскажите о себе чекбоксами</h2>
+    <p class="checkbox__description">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+    <div class="check-block">
+      <div class="check-block__row check-block__row-1">
+        <label class="check-block__name">БЭМ/OOCSS
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box"></span>
+        </label>
+        <label class="check-block__name">Pug (Jade)
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box"></span>
+        </label>
+        <label class="check-block__name">Stylus/LESS/SASS
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box"></span>
+        </label>
+        <label class="check-block__name">Работаю с SVG
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box"></span>
+        </label>
+        <label class="check-block__name">Верстаю семантично
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box"></span>
+        </label>
+        <label class="check-block__name">Accessibility (A11Y)
+          <input class="check-block__value" type="checkbox"><span class="check-block__box"></span>
+        </label>
+        <label class="check-block__name">ES2015/ES2016
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp5"></span>
+        </label>
+      </div>
+      <div class="check-block__row check-block__row-2">
+        <label class="check-block__name">Gulp/GRUNT
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp1"></span>
+        </label>
+        <label class="check-block__name">Webpack
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp1"></span>
+        </label>
+        <label class="check-block__name">Дружу с&#8239&#8239WebGL
+          <input class="check-block__value" type="checkbox"><span class="check-block__box check-block__box-pp1"></span>
+        </label>
+        <label class="check-block__name">jQuery
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp1"></span>
+        </label>
+        <label class="check-block__name">Знаю/изучаю&#8201Angular
+          <input class="check-block__value" type="checkbox"><span class="check-block__box check-block__box-pp1"></span>
+        </label>
+        <label class="check-block__name">Знаю/изучаю React
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp1"></span>
+        </label>
+        <label class="check-block__name">Знаю/изучаю Node.js
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp1"></span>
+        </label>
+      </div>
+      <div class="check-block__row check-block__row-3">
+        <label class="check-block__name">Использую Git
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp2"></span>
+        </label>
+        <label class="check-block__name">C&#8239&#8239<span class="check-block__eye">глазомером<span class="check-block__eye"> всё<span class="check-block__eye"> ок</span></span></span>
+          <input class="check-block__value" type="checkbox" checked><span class="check-block__box check-block__box-pp6"></span>
+        </label>
+        <label class="check-block__name">Читаю&nbsp<a class="check-block__link" href="https://blog.csssr.ru" target="_blank">blog.csssr.ru</a>
+          <input class="check-block__value" type="checkbox"><span class="check-block__box check-block__box-pp3"></span>
+        </label>
+        <label class="check-block__name">Я ленивый(-ая)
+          <input class="check-block__value" type="checkbox"><span class="check-block__box check-block__box-pp3"></span>
+        </label>
+        <label class="check-block__name label check-block__name-pp2">У меня хороший английский
+          <input class="check-block__value" type="checkbox"><span class="check-block__box check-block__box-pp4"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="js-skill">
+    <h2 class="js-skill__title">Уровень владения JavaScript</h2>
+    <input class="js-skill__range" type="range" min="0" max="100" value="80">
+    <div class="js-skill__block">
+      <div class="js-skill__item js-skill__item-pp1">Не владею</div>
+      <div class="js-skill__item js-skill__item-pp2">Использую готовые решения</div>
+      <div class="js-skill__item js-skill__item-pp3">Использую готовые решения и умею их переделывать</div>
+      <div class="js-skill__item js-skill__item-pp4">Пишу сложный JS с нуля</div>
+    </div>
+  </div>
+  <div class="about">
+    <h2 class="about__title">Расскажите о себе словами</h2>
+    <p class="about__description">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+    <textarea class="about__text" rows="3" placeholder="Ну-ууу-уу...
+Ээээ...">В вакансии меня привлекла возможность работать в достойной компанией. От компании ожидаю, что мои навыки оценят по достоинству, и будет мне давать задачи именно по моему уровню компетенции.</textarea>
+  </div>
+  <div class="future-plans">
+    <h2 class="future-plans__title">Какие у вас планы на будущее?</h2>
+    <p class="future-plans__description">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+    <div class="future-plans__radio radio">
+      <label class="radio__name">Верстать
+        <input class="radio__item" type="radio" name="radio"><span class="radio__box"></span>
+      </label>
+      <label class="radio__name radio__name-pp1">Прокачиваться в JS
+        <input class="radio__item" type="radio" name="radio"><span class="radio__box"></span>
+      </label>
+      <label class="radio__name">Менеджерство
+        <input class="radio__item" type="radio" name="radio"><span class="radio__box radio__box-pp1"></span>
+      </label>
+      <label class="radio__name radio__name-pp2">Другое
+        <input class="radio__item js-other-input" type="radio" name="radio" checked><span class="radio__box radio__box-pp3"></span>
+      </label>
+    </div>
+    <div class="future-plans__other">
+      <input class="fiture-plans__input" type="text" placeholder="Можно поподробнее? =)" value="Front end разработка">
+    </div>
+  </div>
+  <div class="date">
+    <div class="date__name">Дата заполнения</div>
+    <div class="date__box">
+      <input class="date__value" type="text" placeholder="19.07.2019" value="19.07.2019">
+    </div>
+  </div>
+</main>
+    </div>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>

@@ -1,39 +1,38 @@
-# Pixel Perfect верстка макета для вакансии CSSSR.ru
+# Pixel Perfect layout for the job CSSSR.ru
 
-Ссылка на результат: http://back.valeravilks.ru/project/csssr-test/
+You can see the result here ([click](dist/index.html))
 
-Данный проект был создан в ответ на тестовое задание работодателя.
+This project was created in response to the test task of the employer.
 
-Для верски данного макета были использованы следующие инструменты:
-<li>Html</li>
-<li>Css</li>
-<li>Js</li>
-<li>Webpack</li>
-<li>Scss</li>
-<li>Npm</li>
-<li>Jquery</li>
-<li>Smartgrid</li>
-<li>Pug</li>
+The task was to produce pixel rect layout of the page. This page has many subtleties, irregularities that needed to be seen and made up correctly. This is from the jumping text to the lines that are rotated several degrees.
 
-<hr>
-Письмо от работодателя после выполняния задания:
-"Здравствуйте, Валерий!
+![](doc/1.jpg)
 
-Спасибо за решение тестового задания и интерес к нашей команде! Мы проверили ваше тестовое и вы неплохо с ним справились:
-+ БЭМ есть;
-+/- Семантика есть, но можно лучше (разбавить дивы секциями, сделать лейблы тегом label с привязкой к полю ввода);
-+ Слайдер работает;
-- Навигация с клавиатуры затруднена, нет подсветки элементов в фокусе;
-+ Поле "Расскажите о себе словами" увеличивается при увеличении числа строк;
-+ PixelPerfect соблюдён;
-- Адаптива не на всех блоках;
-+ Используется html препроцессор (pug);
-+ Используется css препроцессор (stylus) c нестингом, переменными и миксинами;
-+ Интуитивно понятная структура проекта.
+The following tools were used for the version of this layout:
+* Html
+* Css
+* Js
+* Webpack
+* Scss
+* Npm
+* Jquery
+* Smartgrid
+* Pug
 
-Вы хороший кандидат, мы будем рады с вами пообщаться в будущем. Сейчас вакансия закрыта, потому что мы нашли подходящего кандидата.
+A letter from the employer after completing the assignment:
+```
+Thank you for solving the test task and interest in our team! We checked your test and you did a good job of it:
++ BEM good;
++ There is semantics, but it can be better (dilute the divs with sections, make labels with a label tag with reference to the input field);
++ Slider works;
++ Navigation from the keyboard is difficult, there is no highlighting of elements in focus;
++ The field "Tell us about yourself in words" increases with increasing number of lines;
++ PixelPerfect observed;
++ Adaptive not on all blocks;
++ Used html preprocessor (pug);
++ Used css preprocessor (stylus) with nesting, variables and mixins;
++ Intuitive project structure.
+```
+It should be noted that this work was done only for the desktop. I want to add from myself that in this work there are a lot of subtleties that are required for layout, and which are little needed in real projects, so for me this layout is indicative.
 
-Обязательно вас запомним и напишем, когда такая или похожая вакансия откроется снова.
---
-С уважением,
-команда CSSSR"
+
