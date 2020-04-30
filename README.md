@@ -1,6 +1,6 @@
 # Pixel Perfect layout for the job CSSSR.ru
 
-You can see the result here ([click](dist/index.html))
+You can see the result here (<a href="/dist" target="_blank">click</a>)
 
 This project was created in response to the test task of the employer.
 
